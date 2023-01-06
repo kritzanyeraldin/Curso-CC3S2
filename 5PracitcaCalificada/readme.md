@@ -92,3 +92,5 @@ image: checha/calculador
 ports:
 - containerPort: 8080
 ```
+Instalamos la implementacion y verificamos que se hayan creado los pods
+![5](images_24/5.jpg)
