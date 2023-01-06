@@ -1,10 +1,14 @@
-# PC5:
+# PC5
+
 ## PREGUNTA 1
+
 ### Actividad 23
+
 #### Instalacion y uso de Docker Registry
+
 * Instalacion de la aplicacion de Docker Registry  
 Iniciamos la imagen de docker registry con el siguiente comando:  
- `docker run -d -p 5000:5000 --restart=always --name registry registry:2`    
+ `docker run -d -p 5000:5000 --restart=always --name registry registry:2`  
  Lo cual resulta:  
 ![1](images_23/1.jpg)  
 
