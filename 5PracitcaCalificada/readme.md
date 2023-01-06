@@ -66,31 +66,31 @@ apt-get install -y python
 
  Revisamos que la imagen fue construida. Etiquetamos la imagen y ya que nos registramos previamente, almacenamos la imagen en el registro de la siguiente forma:
 
-![8](images_23/8.jpg)
+![8](images_23/8.JPG)
 
 Verficamos que la imagen ha sido almacenada en la interfaz web de Docker Hub
 
-![9](images_23/9.jpg)
+![9](images_23/9.JPG)
 
 * Realizamos un pulling de la imagen del registro
 
 Procedemos a eliminar la imagen localmente para luego poder recuperarla del registro, como se muestra:
 
-![10](images_23/10.jpg)
+![10](images_23/10.JPG)
 
 Pruebas de aceptacion en el pipeline de Jenkins
 
 Crearemos un dockerfile en el proyecto calculador
 
-![11](images_23/11.jpg)
+![11](images_23/11.JPG)
 
 Construimos el proyecto
 
-![12](images_23/12.jpg)
+![12](images_23/12.JPG)
 
 Se crea la imagen de Docker, pero no se logra ejecutar con exito el contenedor
 
-![13](images_23/13.jpg)
+![13](images_23/13.JPG)
 
 ### Actividad 24
 
@@ -98,19 +98,19 @@ Se crea la imagen de Docker, pero no se logra ejecutar con exito el contenedor
 
 Instalacion finalizada y con exito de kubectl
 
-![1](images_24/1.jpg)
+![1](images_24/1.JPG)
 
 Instalacion de minikube e iniciamos un cluster de kubernetes con exito
 
-![2](images_24/2.jpg)
+![2](images_24/2.JPG)
 
 Verificamos la configuracion de kubernetes
 
-![3](images_24/3.jpg)
+![3](images_24/3.JPG)
 
 Si ingresamos en nuestra web a https://127.0.0.1:51635/
 
-![4](images_24/4.jpg)
+![4](images_24/4.JPG)
 
 * Implementacion de una aplicacion
 
@@ -142,4 +142,4 @@ ports:
 
 Instalamos la implementacion y verificamos que se hayan creado los pods
 
-![5](images_24/5.jpg)
+![5](images_24/5.JPG)
