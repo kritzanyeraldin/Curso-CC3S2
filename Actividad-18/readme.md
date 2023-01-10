@@ -177,3 +177,37 @@ puede navegar en http://localhost:32772.
 4.Podemos ver que el sistema de archivos se compartió y, por lo tanto, los datos se conservaron de forma permanente. Detén el contenedor y ejecuta uno nuevo para ver si el archivo todavía estará allí
 
 ![38](imagenes/38.JPG)
+
+**Limpieza de contenedores**
+
+1. Para imprimir todos los contenedores (independientemente de su estado), podemos usar el comando docker ps -a
+
+![39](imagenes/39.JPG)
+
+2.Para eliminar un contenedor detenido, podemos usar el comando docker rm (si un contenedor se está ejecutando, primero debemos detenerlo)
+
+![40](imagenes/40.JPG)
+
+3.Si queremos eliminar todos los contenedores detenidos
+
+![41](imagenes/41.JPG)
+
+4.También podemos adoptar un enfoque diferente y pedirle al contenedor que se elimine tan pronto como se detenga usando el indicador --rm
+
+![42](imagenes/42.JPG)
+
+**Limpieza de imagenes**
+
+1.Para verificar todas las imágenes en el contenedor de Docker, podemos usar el comando de imágenes de Docker (docker images) $ docker images
+
+![43](imagenes/43.JPG)
+
+2.Para eliminar una imagen, podemos llamar al siguiente comando: $ docker rmi 48b5124b2768
+
+![44](imagenes/44.JPG)
+
+3.En el caso de las imágenes, el proceso de limpieza automática es un poco más complejo. Las imágenes no tienen estados, por lo que no podemos pedirles que se eliminen cuando no se usan. Una estrategia
+común sería configurar un trabajo de limpieza de cron, que elimina todas las imágenes antiguas y no utilizadas
+
+![45](imagenes/45.JPG)
+
