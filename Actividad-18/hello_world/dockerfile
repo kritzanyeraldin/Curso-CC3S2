@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+RUN apt-get update && \
+apt-get install -y python
+COPY hola.py .
+ENV NAME=Ako
+ENTRYPOINT ["python","hola.py"]
